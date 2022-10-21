@@ -48,8 +48,8 @@ window.onload = function() {
 };
 
 // generar con boton
-let boton = document.getElementById("generar");
-boton.addEventListener("click", onload);
+let generar = document.getElementById("generar");
+generar.addEventListener("click", onload);
 
 // cambiar el tamañano de la carta
 
@@ -93,6 +93,8 @@ var mySlider = $("#my-slider").slider({
   step: 50,
   value: 350
 });
+
+// prueba de slider***********************************
 
 // Initialise slider
 $("#my-slider").on("slide", function(slideEvt) {
