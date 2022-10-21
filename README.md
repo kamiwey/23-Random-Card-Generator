@@ -1,52 +1,63 @@
-# Hello World with Vanilla JS
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  Random Card Dealer in Javascript, HTML and CSS
 
-Start coding in 30 seconds by opening this template in gitpod:
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/vanillajs-hello.git)
+<p align="center">
+<img height="200px" src="https://github.com/breatheco-de/exercise-random-card/blob/master/preview.gif?raw=true" />
+</p>
 
-### Manual Installation
+In this project you will learn how to change your website styles during the runtime using [VanillaJS](https://stackoverflow.com/questions/20435653/what-is-vanillajs) (plain normal js).
 
-1) Remember to install the npm packages first:
-```
-$ npm install
-```
+# 📝 Instructions
 
-2) Build and Start coding!
+Create an algorithm that randomly builds a card on every refresh:
 
-Build the application for the first time...
+1. Every time the website refreshes a new random card needs to show.
 
-```
-$ npm run start
-```
+2. The card must have one of the possible suits: Hearts, Spades, Clubs and Diamonds.
 
-And start coding your Vanilla.js application, update the `src/index.html`, `src/index.css` or `src/app.js` depending on your needs.
+3. The card value must be one of the following: 2 to 10, King, Queen, Jack or Ace, (no joker).
 
-## FAQ
+In the end, the project needs to look similar to [this demo](https://github.com/breatheco-de/exercise-random-card/blob/master/preview.gif?raw=true).
 
-#### 1) How do I run my code?
+## 🌱  How to start this project
 
-- Type on the command line `$ npm run start` and type localhost on the browser.
+ Do not clone this repository.
 
-#### 2) Where do I write my code?
-It depends on the language, but you have `./src/js/app.js`, `./src/style/index.css` and `./isrc/index.html` respectively, you can add new `.html` as you please, just make sure to include import it on the index.js.
+The first step to start coding is cloning the [vanilla.js boilerplate](https://github.com/4GeeksAcademy/vanillajs-hello.git) on your local computer or gitpod.
 
-__Note:__ remember that the JS workflow starts inside `window.onload`.
+a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/vanillajs-hello.git).
 
-#### 3) I don't see my changes.
+b) If working locally type the following command from your command line:
 
-Everytime you change any file inside the `./src` folder the website public URL will automatically refresh the changes (it's a process called hot deploy)
-Remember also to refresh cleaning the cache (command+shift+r on mac, control+shift+r on pc & linux)
-
-#### 4) How do I include more images on my project?
-Add them inside the `./src/assets/img` folder and import them from any of your JS files. E.g: `import "../assets/img/rigo-baby.jpg";`
-
-#### 5) How do I include more JS files?
-Just add the files into the JS folder and import the file/variables into your index.js. E.g: `import myVar from "./file2.js"`
-
-#### 6) How do I publish the website?
-
-This boilerplate is 100% compatible with the free github pages hosting. Publish your website by running:
 ```sh
-$ npm run deploy
+
+$ git clone https://github.com/4GeeksAcademy/vanillajs-hello.git
+
 ```
 
-Very easy and in just one step!  Push to your __master__ branch and use the free hosting that comes with [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), the project is ready to be published. Remember to choose to run the Github Page from your master branch.
+## 💡 Important: 
+
+Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+
+## 💡 Hints
+
+- Remember that the first event of a website lifecycle is [onLoad (your code starts running there)](https://www.w3schools.com/jsref/event_onload.asp). You should generate a random number between 1 and 4 to pick a suit and another random number between 0 and 12 to pick a card number.
+
+- Create a general **.card** class that applies the general styles to each card, and one additional CSS class for each suit: .spade, .club, .heart & .diamond.
+
+- Apply the .card class to the entire div but only apply one of the suit classes at a time, depending on what suit you want to apply. For example, a 3 of Hearts will have this HTML declaration:
+
+```html
+    <div class='card heart'></div>
+```
+
+- You can grab the icons from here (copy and paste into your code): ♦ ♥ ♠ ♣
+
+## 😎 Feeling Confident?
+
+The following requirements are not needed to sucessfully finish this project, but you can try and challenge yourself!
+
+`+1` Add a button that generates a new card when clicked. 
+
+`+1` Add a timer that generates a new card every 10 seconds.   
+
+`+1` Allow the user to specify the card width and height using text inputs.   
