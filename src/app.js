@@ -85,5 +85,3 @@ tiempo.addEventListener("click", intervalo);
 function intervalo() {
   setInterval(onload, 2000);
 }
-
-
