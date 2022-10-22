@@ -42,12 +42,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-h1 {
-  font-size: 120px;
-}
-h2 {
-  font-size: 100px;
-}
+
 #numero {
   height: 230px;
   font-size: 120px;
@@ -88,12 +83,7 @@ h2 {
   font-size: 30px;
 }
 
-#my-sliderlLabel {
-  padding: 10px;
-  color: #fff;
-  font-size: 25px;
-  margin-bottom: -30px;
-}
+
 
 #tiempo {
   background: darkorange;
@@ -101,22 +91,4 @@ h2 {
   border-radius: 4px;
   color: #fff;
 }
-.my-slider-wrapper {
-  margin-top: 15px;
-  margin-bottom: 50px;
-}
-.sliderButton.minus {
-  color: white;
-  border: 0;
-  border-radius: 5px;
-  font-size: 30px;
-  background: red;
-}
-.sliderButton.plus {
-  color: white;
-  border: 0;
-  border-radius: 5px;
-  font-size: 20px;
-  height: 50px;
-  background: darkblue;
-}
+
